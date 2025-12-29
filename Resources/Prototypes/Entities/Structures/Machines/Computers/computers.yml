@@ -421,15 +421,12 @@
     board: CriminalRecordsComputerCircuitboard
   - type: AccessReader
     access: [["Security"]]
-  - type: GuideHelp
-    guides:
-    - CriminalRecords
 
 - type: entity
   parent: BaseComputerAiAccess
   id: ComputerStationRecords
-  name: station records computer
-  description: This can be used to check station records.
+  name: employment records computer
+  description: This can be used to check employment records.
   components:
   # BEGIN CD
   # Wizden UI
@@ -967,7 +964,7 @@
     account: Engineering
     announcementChannel: Engineering
     removeLimitAccess: [ "ChiefEngineer" ]
-    mode: SendToPrimary
+    mode: PrintSlip # CD: Print slips
   - type: ActiveRadio
     channels:
     - Engineering
@@ -1000,7 +997,7 @@
     account: Medical
     announcementChannel: Medical
     removeLimitAccess: [ "ChiefMedicalOfficer" ]
-    mode: SendToPrimary
+    mode: PrintSlip # CD: Print slips
   - type: ActiveRadio
     channels:
     - Medical
@@ -1033,7 +1030,7 @@
     account: Science
     announcementChannel: Science
     removeLimitAccess: [ "ResearchDirector" ]
-    mode: SendToPrimary
+    mode: PrintSlip # CD: Print slips
   - type: ActiveRadio
     channels:
     - Science
@@ -1066,7 +1063,7 @@
     account: Security
     announcementChannel: Security
     removeLimitAccess: [ "HeadOfSecurity" ]
-    mode: SendToPrimary
+    mode: PrintSlip # CD: Print slips
   - type: ActiveRadio
     channels:
     - Security
@@ -1099,7 +1096,7 @@
     account: Service
     announcementChannel: Service
     removeLimitAccess: [ "HeadOfPersonnel" ]
-    mode: SendToPrimary
+    mode: PrintSlip # CD: Print slips
   - type: ActiveRadio
     channels:
     - Service
